@@ -48,7 +48,12 @@ impl Circle {
 }
 
 pub struct ShapeFactory;
-
+// pub enum Shapes {
+//     Rectangle,
+//     Square,
+//     Circle,
+// }
+// even better
 const RECTANGLE: &str = "rectangle";
 const SQUARE: &str = "square";
 const CIRCLE: &str = "circle";
