@@ -12,3 +12,7 @@ edition = "2018"
 [[bin]]
 name = "factory_pattern"
 path = "src/creational_pattern/factory_pattern/main.rs"
+
+[[bin]]
+name = "abstract_factory_pattern"
+path = "src/creational_pattern/abstract_factory_pattern/main.rs"
