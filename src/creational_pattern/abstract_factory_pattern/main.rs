@@ -1,6 +1,5 @@
 use design_pattern::creational_pattern::abstract_factory_pattern::{
-    FactoryProducer,
-    Category, Colors, Shapes
+    Category, Colors, FactoryProducer, Shapes,
 };
 
 fn main() {

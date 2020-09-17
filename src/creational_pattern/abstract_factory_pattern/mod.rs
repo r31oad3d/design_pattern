@@ -129,15 +129,9 @@ impl AbstractFactory for ShapeFactory {
 
     fn get_shape(&self, shape: Shapes) -> Box<dyn Shape> {
         match shape {
-            Shapes::Circle => {
-                Box::new(Circle::new())
-            },
-            Shapes::Rectangle => {
-                Box::new(Rectangle::new())
-            },
-            Shapes::Square => {
-                Box::new(Square::new())
-            },
+            Shapes::Circle => Box::new(Circle::new()),
+            Shapes::Rectangle => Box::new(Rectangle::new()),
+            Shapes::Square => Box::new(Square::new()),
         }
     }
 }
@@ -152,15 +146,9 @@ impl ShapeFactory {
 impl AbstractFactory for ColorFactory {
     fn get_color(&self, color: Colors) -> Box<dyn Color> {
         match color {
-            Colors::Red => {
-                Box::new(Red::new())
-            },
-            Colors::Green => {
-                Box::new(Green::new())
-            },
-            Colors::Blue => {
-                Box::new(Blue::new())
-            },
+            Colors::Red => Box::new(Red::new()),
+            Colors::Green => Box::new(Green::new()),
+            Colors::Blue => Box::new(Blue::new()),
         }
     }
 
@@ -179,14 +167,10 @@ impl ColorFactory {
 pub struct FactoryProducer;
 
 impl FactoryProducer {
-    pub fn get_factory(category : Category) -> Box<dyn AbstractFactory> {
+    pub fn get_factory(category: Category) -> Box<dyn AbstractFactory> {
         match category {
-            Category::Shapes => {
-                Box::new(ShapeFactory::new())
-            },
-            Category::Colors => {
-                Box::new(ColorFactory::new())
-            },
+            Category::Shapes => Box::new(ShapeFactory::new()),
+            Category::Colors => Box::new(ColorFactory::new()),
         }
     }
 }
