@@ -21,3 +21,7 @@ path = "src/creational_pattern/abstract_factory_pattern/main.rs"
 [[bin]]
 name = "singleton_pattern"
 path = "src/creational_pattern/singleton_pattern/main.rs"
+
+[[bin]]
+name = "builder_pattern"
+path = "src/creational_pattern/builder_pattern/main.rs"

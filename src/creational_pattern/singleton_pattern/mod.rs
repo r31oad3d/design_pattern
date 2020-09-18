@@ -8,7 +8,6 @@ lazy_static! {
         Arc::new(SingleObject::new());
 }
 
-
 #[derive(Default)]
 pub struct SingleObject;
 
@@ -23,11 +22,12 @@ impl SingleObject {
     }
 
     pub fn get_instance() -> Arc<SingleObject> {
-        static mut SINGLE_OBJECT_INSTANCES_UNSAFE: Option<Arc<SingleObject>> = None;
+        static mut SINGLE_OBJECT_INSTANCES_UNSAFE: Option<Arc<SingleObject>> =
+            None;
         unsafe {
-            SINGLE_OBJECT_INSTANCES_UNSAFE.get_or_insert_with(|| {
-                Arc::new(SingleObject::new())
-            }).clone()
+            SINGLE_OBJECT_INSTANCES_UNSAFE
+                .get_or_insert_with(|| Arc::new(SingleObject::new()))
+                .clone()
         }
     }
 }

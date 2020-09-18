@@ -1,5 +1,5 @@
 use design_pattern::creational_pattern::singleton_pattern::{
-    SingleObject, SINGLE_OBJECT_INSTANCES, SINGLE_OBJECT_INSTANCES_LOCK
+    SingleObject, SINGLE_OBJECT_INSTANCES, SINGLE_OBJECT_INSTANCES_LOCK,
 };
 use std::sync::MutexGuard;
 
@@ -22,7 +22,6 @@ fn main() {
     let obj5 = SingleObject::new();
     obj5;
     println!("THE END!");
-
 
     let obj6 = SingleObject::get_instance();
     obj6.do_it();
