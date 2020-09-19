@@ -1,12 +1,10 @@
 use std::ops::Deref;
 
-pub struct Item
-{
+pub struct Item {
     meal: Box<dyn Category>,
 }
 
-impl Deref for Item
-{
+impl Deref for Item {
     type Target = Box<dyn Category>;
 
     fn deref(&self) -> &Self::Target {
@@ -105,12 +103,10 @@ impl Category for Pepsi {
     }
 }
 
-pub struct Meal
-{
+pub struct Meal {
     pub items: Vec<Item>,
 }
-impl Meal
-{
+impl Meal {
     pub fn add_item(&mut self, item: Item) {
         self.items.push(item);
     }
@@ -131,25 +127,30 @@ impl Meal
     }
 }
 
-pub struct MealBuilder {
-
-}
+pub struct MealBuilder {}
 impl MealBuilder {
-    pub fn prepare_veg_meal() -> Meal
-    {
+    pub fn prepare_veg_meal() -> Meal {
         Meal {
             items: vec![
-                Item{meal: Box::new(VegBurger)},
-                Item{meal: Box::new(Coke)},
+                Item {
+                    meal: Box::new(VegBurger),
+                },
+                Item {
+                    meal: Box::new(Coke),
+                },
             ],
         }
     }
 
-    pub fn prepare_non_veg_meal() -> Meal{
+    pub fn prepare_non_veg_meal() -> Meal {
         Meal {
             items: vec![
-                Item{meal: Box::new(ChickenBurger)},
-                Item{meal: Box::new(Pepsi)},
+                Item {
+                    meal: Box::new(ChickenBurger),
+                },
+                Item {
+                    meal: Box::new(Pepsi),
+                },
             ],
         }
     }
