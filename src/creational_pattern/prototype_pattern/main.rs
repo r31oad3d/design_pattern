@@ -1,4 +1,6 @@
-use design_pattern::creational_pattern::prototype_pattern::way1::{Shape, ShapeCache};
+use design_pattern::creational_pattern::prototype_pattern::way1::{
+    Shape, ShapeCache,
+};
 
 fn main() {
     let circle: Box<dyn Shape> = ShapeCache::get_shape("1").unwrap();

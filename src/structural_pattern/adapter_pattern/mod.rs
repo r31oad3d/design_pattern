@@ -1,10 +1,10 @@
 pub trait MediaPlayer {
-    fn play(&self,audio_type: String, file_name: String);
+    fn play(&self, audio_type: String, file_name: String);
 }
 
 pub trait AdvancedMediaPlayer {
-    fn play_vlc(&self,file_name:String);
-    fn play_mp4(&self,file_name:String);
+    fn play_vlc(&self, file_name: String);
+    fn play_mp4(&self, file_name: String);
 }
 
 pub struct VlcPlayer;
@@ -14,7 +14,7 @@ impl AdvancedMediaPlayer for VlcPlayer {
         println!("Playing vlc file. Name: {}", file_name);
     }
 
-    fn play_mp4(&self,_file_name: String) {
+    fn play_mp4(&self, _file_name: String) {
         unimplemented!()
     }
 }
@@ -31,13 +31,11 @@ impl AdvancedMediaPlayer for Mp4Player {
     }
 }
 
-
-pub struct MediaAdapter
-{
+pub struct MediaAdapter {
     advance_media_player: Box<dyn AdvancedMediaPlayer>,
 }
 impl MediaAdapter {
-    pub fn new(audio_type:String) -> Self {
+    pub fn new(audio_type: String) -> Self {
         if audio_type.contains("vlc") {
             MediaAdapter {
                 advance_media_player: Box::new(VlcPlayer),
@@ -53,7 +51,7 @@ impl MediaAdapter {
 }
 
 impl MediaPlayer for MediaAdapter {
-    fn play(&self,audio_type: String, file_name: String) {
+    fn play(&self, audio_type: String, file_name: String) {
         if audio_type.contains("vlc") {
             self.advance_media_player.play_vlc(file_name);
         } else if audio_type.contains("mp4") {
@@ -64,8 +62,7 @@ impl MediaPlayer for MediaAdapter {
     }
 }
 
-pub struct AudioPlayer{
-}
+pub struct AudioPlayer {}
 impl MediaPlayer for AudioPlayer {
     fn play(&self, audio_type: String, file_name: String) {
         if audio_type.contains("mp3") {

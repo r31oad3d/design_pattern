@@ -33,3 +33,7 @@ path = "src/creational_pattern/prototype_pattern/main.rs"
 [[bin]]
 name = "adapter_pattern"
 path = "src/structural_pattern/adapter_pattern/main.rs"
+
+[[bin]]
+name = "bridge_pattern"
+path = "src/structural_pattern/bridge_pattern/main.rs"
