@@ -10,6 +10,8 @@ edition = "2018"
 [dependencies]
 lazy_static = "1.4.0"
 dyn-clone = "1.0.2"
+itertools ="0.9.0"
+
 [[bin]]
 name = "factory_pattern"
 path = "src/creational_pattern/factory_pattern/main.rs"
@@ -37,3 +39,7 @@ path = "src/structural_pattern/adapter_pattern/main.rs"
 [[bin]]
 name = "bridge_pattern"
 path = "src/structural_pattern/bridge_pattern/main.rs"
+
+[[bin]]
+name = "filter_pattern"
+path = "src/structural_pattern/filter_pattern/main.rs"
