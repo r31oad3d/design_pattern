@@ -2,9 +2,9 @@ use design_pattern::structural_pattern::filter_pattern::way1::{
     AndCriteria, Criteria, CriteriaFemale, CriteriaMale, CriteriaSingle,
     OrCriteria, Person,
 };
-use design_pattern::structural_pattern::filter_pattern::way2::{
-    do_filter, get_criteria, Criterias,
-};
+// use design_pattern::structural_pattern::filter_pattern::way2::{
+//     do_filter, get_criteria, Criterias,
+// };
 use std::rc::Rc;
 
 fn main() {
