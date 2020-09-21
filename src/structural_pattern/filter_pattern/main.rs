@@ -1,4 +1,10 @@
-use design_pattern::structural_pattern::filter_pattern::{Criteria, CriteriaFemale, CriteriaMale, CriteriaSingle, Person, AndCriteria, OrCriteria};
+use design_pattern::structural_pattern::filter_pattern::way1::{
+    AndCriteria, Criteria, CriteriaFemale, CriteriaMale, CriteriaSingle,
+    OrCriteria, Person,
+};
+use design_pattern::structural_pattern::filter_pattern::way2::{
+    do_filter, get_criteria, Criterias,
+};
 use std::rc::Rc;
 
 fn main() {
@@ -64,4 +70,14 @@ fn main() {
 
     println!("Male or single: ");
     print_persons(&male_or_single.meet_criteria(&persons));
+
+    // println!("Way2: ");
+    // println!("Males: ");
+    // print_persons(&do_filter(
+    //     &persons,
+    //     get_criteria(Criterias::Marital(String::from("SINGLE"))),
+    // ));
+    //
+    // println!("All: ");
+    // print_persons(&do_filter(&persons, get_criteria(Criterias::All)));
 }
