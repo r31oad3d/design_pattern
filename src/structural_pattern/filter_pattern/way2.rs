@@ -51,7 +51,6 @@ where
 //     }};
 // }
 
-
 //
 // fn way2_filter_test() {
 //     let c1 = get_criteria!(

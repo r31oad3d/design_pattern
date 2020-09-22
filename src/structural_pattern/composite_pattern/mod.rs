@@ -5,14 +5,17 @@ pub struct Employee {
     name: String,
     dept: String,
     salary: i32,
-    subordinates: Vec<Employee>
+    subordinates: Vec<Employee>,
 }
 
 impl Employee {
-    pub fn new(name: String,
-               dept: String,
-               salary: i32) -> Self {
-        Employee {name,dept,salary,subordinates: Vec::<Employee>::new()}
+    pub fn new(name: String, dept: String, salary: i32) -> Self {
+        Employee {
+            name,
+            dept,
+            salary,
+            subordinates: Vec::<Employee>::new(),
+        }
     }
 
     pub fn add(&mut self, e: Employee) {
@@ -32,8 +35,10 @@ impl Employee {
 
 impl std::fmt::Display for Employee {
     fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Employee: [name:{}, dept:{}, salary:{}]", self.name, self.dept, self.salary)
+        write!(
+            f,
+            "Employee: [name:{}, dept:{}, salary:{}]",
+            self.name, self.dept, self.salary
+        )
     }
 }
-
-
