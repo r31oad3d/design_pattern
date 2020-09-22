@@ -72,14 +72,14 @@ fn main() {
     print_persons(&male_or_single.meet_criteria(&persons));
 
     println!("Way2: ");
-    // println!("Males: ");
-    // print_persons(&do_filter(
-    //     &persons,
-    //     get_criteria(Criterias::Marital(String::from("SINGLE"))),
-    // ));
-    //
-    // println!("All: ");
-    // print_persons(&do_filter(&persons, get_criteria(Criterias::All)));
+    println!("Males: ");
+    print_persons(&do_filter(
+        &persons,
+        get_criteria(Criterias::Marital(String::from("SINGLE"))),
+    ));
+
+    println!("All: ");
+    print_persons(&do_filter(&persons, get_criteria(Criterias::All)));
 
     //get_criteria!()
 }

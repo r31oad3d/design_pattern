@@ -43,3 +43,7 @@ path = "src/structural_pattern/bridge_pattern/main.rs"
 [[bin]]
 name = "filter_pattern"
 path = "src/structural_pattern/filter_pattern/main.rs"
+
+[[bin]]
+name = "composite_pattern"
+path = "src/structural_pattern/composite_pattern/main.rs"
