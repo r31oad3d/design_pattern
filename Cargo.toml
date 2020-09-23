@@ -47,3 +47,7 @@ path = "src/structural_pattern/filter_pattern/main.rs"
 [[bin]]
 name = "composite_pattern"
 path = "src/structural_pattern/composite_pattern/main.rs"
+
+[[bin]]
+name = "decorator_pattern"
+path = "src/structural_pattern/decorator_pattern/main.rs"
