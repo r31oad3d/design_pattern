@@ -18,20 +18,22 @@ impl Shape for Rectangle {
     }
 }
 
-pub trait ShapeDecorator : Shape
-{
+pub trait ShapeDecorator: Shape {
     fn set_red_border(&self);
 }
 
 #[derive(Default)]
 pub struct RedShapeDecorator<T>
-    where
-        T: Shape,
+where
+    T: Shape,
 {
     decorated_shape: T,
 }
 
-impl<T> Shape for RedShapeDecorator<T> where T: Shape {
+impl<T> Shape for RedShapeDecorator<T>
+where
+    T: Shape,
+{
     fn draw(&self) {
         self.decorated_shape.draw();
         self.set_red_border();
@@ -39,22 +41,19 @@ impl<T> Shape for RedShapeDecorator<T> where T: Shape {
 }
 
 impl<T> ShapeDecorator for RedShapeDecorator<T>
-    where
-        T: Shape,
+where
+    T: Shape,
 {
-
     fn set_red_border(&self) {
         println!("Border Color: Red")
     }
 }
 
 impl<T> RedShapeDecorator<T>
-    where
-        T: Shape,
+where
+    T: Shape,
 {
     pub fn new(decorated_shape: T) -> RedShapeDecorator<T> {
         RedShapeDecorator { decorated_shape }
     }
-
-
 }

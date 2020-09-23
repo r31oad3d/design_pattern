@@ -1,5 +1,3 @@
-
-
 fn main() {
     mod way1 {
         use design_pattern::structural_pattern::decorator_pattern::way1::{
@@ -21,7 +19,6 @@ fn main() {
     }
     println!("way1way1");
     way1::way1();
-
 
     mod way2 {
         use design_pattern::structural_pattern::decorator_pattern::way2::{
@@ -45,7 +42,6 @@ fn main() {
     }
     println!("way2way2");
     way2::way2();
-
 
     mod way3 {
         use design_pattern::structural_pattern::decorator_pattern::way3::{

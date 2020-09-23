@@ -18,13 +18,11 @@ impl Shape for Rectangle {
     }
 }
 
-pub trait ShapeDecorator: Shape
-{
+pub trait ShapeDecorator: Shape {
     fn set_red_border(&self);
 }
 
-pub struct RedShapeDecorator
-{
+pub struct RedShapeDecorator {
     decorated_shape: Box<dyn Shape>,
 }
 
@@ -35,18 +33,14 @@ impl Shape for RedShapeDecorator {
     }
 }
 
-impl ShapeDecorator for RedShapeDecorator
-{
+impl ShapeDecorator for RedShapeDecorator {
     fn set_red_border(&self) {
         println!("Border Color: Red")
     }
 }
 
-impl RedShapeDecorator
-{
+impl RedShapeDecorator {
     pub fn new(decorated_shape: Box<dyn Shape>) -> RedShapeDecorator {
         RedShapeDecorator { decorated_shape }
     }
-
-
 }
