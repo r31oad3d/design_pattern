@@ -11,6 +11,8 @@ edition = "2018"
 lazy_static = "1.4.0"
 dyn-clone = "1.0.2"
 itertools ="0.9.0"
+mut_static = "5.0.0"
+rand = "0.7.3"
 
 [[bin]]
 name = "factory_pattern"
@@ -55,3 +57,7 @@ path = "src/structural_pattern/decorator_pattern/main.rs"
 [[bin]]
 name = "facade_pattern"
 path = "src/structural_pattern/facade_pattern/main.rs"
+
+[[bin]]
+name = "flyweight_pattern"
+path = "src/structural_pattern/flyweight_pattern/main.rs"
