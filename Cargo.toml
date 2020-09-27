@@ -61,3 +61,7 @@ path = "src/structural_pattern/facade_pattern/main.rs"
 [[bin]]
 name = "flyweight_pattern"
 path = "src/structural_pattern/flyweight_pattern/main.rs"
+
+[[bin]]
+name = "proxy_pattern"
+path = "src/structural_pattern/proxy_pattern/main.rs"
