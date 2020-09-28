@@ -6,3 +6,4 @@ pub mod facade_pattern;
 pub mod filter_pattern;
 pub mod flyweight_pattern;
 pub mod proxy_pattern;
+pub mod chain_of_responsibility_pattern;
