@@ -12,15 +12,15 @@ pub trait AbstractLogger {
 pub struct Logger<'a> {
     level: LogLevel,
     logger: Box<dyn AbstractLogger>,
-    next_logger: Option<&'a Logger<'a>>
+    next_logger: Option<&'a Logger<'a>>,
 }
 
 impl<'a> Logger<'a> {
-    pub fn new(level: LogLevel, logger: Box<dyn AbstractLogger>,) -> Logger<'a> {
+    pub fn new(level: LogLevel, logger: Box<dyn AbstractLogger>) -> Logger<'a> {
         Logger {
             level,
             logger,
-            next_logger: None
+            next_logger: None,
         }
     }
 
@@ -38,33 +38,26 @@ impl<'a> Logger<'a> {
     }
 }
 
-
-pub struct ConsoleLogger {
-
-}
+pub struct ConsoleLogger {}
 
 impl AbstractLogger for ConsoleLogger {
-    fn write(&self, message: &str ) {
-        println!("Standard Console:logger: {}" , message)
+    fn write(&self, message: &str) {
+        println!("Standard Console:logger: {}", message)
     }
 }
 
-pub struct ErrorLogger {
-
-}
+pub struct ErrorLogger {}
 
 impl AbstractLogger for ErrorLogger {
     fn write(&self, message: &str) {
-        println!("Error Console:logger: {}" , message)
+        println!("Error Console:logger: {}", message)
     }
 }
 
-pub struct FileLogger {
-
-}
+pub struct FileLogger {}
 
 impl AbstractLogger for FileLogger {
     fn write(&self, message: &str) {
-        println!("File Console:logger: {}" , message)
+        println!("File Console:logger: {}", message)
     }
 }
