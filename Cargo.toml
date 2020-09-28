@@ -68,4 +68,4 @@ path = "src/structural_pattern/proxy_pattern/main.rs"
 
 [[bin]]
 name = "chain_of_responsibility_pattern"
-path = "src/structural_pattern/chain_of_responsibility_pattern/main.rs"
+path = "src/behavior_pattern/chain_of_responsibility_pattern/main.rs"

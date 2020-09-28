@@ -1,4 +1,4 @@
-use design_pattern::structural_pattern::chain_of_responsibility_pattern::{Logger, LogLevel, ErrorLogger, FileLogger, ConsoleLogger};
+use design_pattern::behavior_pattern::chain_of_responsibility_pattern::{Logger, LogLevel, ErrorLogger, FileLogger, ConsoleLogger};
 
 fn main() {
     let mut error_logger = Logger::new(LogLevel::ERROR, Box::new(ErrorLogger{}));
