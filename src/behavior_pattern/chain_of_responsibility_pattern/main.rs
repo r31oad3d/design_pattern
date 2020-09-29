@@ -1,4 +1,4 @@
-use design_pattern::behavior_pattern::chain_of_responsibility_pattern::{
+use design_pattern::behavior_pattern::chain_of_responsibility_pattern::way1::{
     ConsoleLogger, ErrorLogger, FileLogger, LogLevel, Logger,
 };
 
