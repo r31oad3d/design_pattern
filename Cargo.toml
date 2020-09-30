@@ -77,3 +77,7 @@ path = "src/behavior_pattern/command_pattern/main.rs"
 [[bin]]
 name = "interpreter_pattern"
 path = "src/behavior_pattern/interpreter_pattern/main.rs"
+
+[[bin]]
+name = "iterator_pattern"
+path = "src/behavior_pattern/iterator_pattern/main.rs"
