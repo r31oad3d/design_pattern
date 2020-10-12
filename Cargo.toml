@@ -13,6 +13,8 @@ dyn-clone = "1.0.2"
 itertools ="0.9.0"
 mut_static = "5.0.0"
 rand = "0.7.3"
+chrono = "0.4.19"
+
 
 [[bin]]
 name = "factory_pattern"
@@ -81,3 +83,7 @@ path = "src/behavior_pattern/interpreter_pattern/main.rs"
 [[bin]]
 name = "iterator_pattern"
 path = "src/behavior_pattern/iterator_pattern/main.rs"
+
+[[bin]]
+name = "mediator_pattern"
+path = "src/behavior_pattern/mediator_pattern/main.rs"

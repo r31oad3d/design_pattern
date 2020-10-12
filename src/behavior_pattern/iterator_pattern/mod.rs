@@ -3,7 +3,6 @@ pub trait Iterator<'a> {
     fn next(&mut self) -> Option<&str>;
 }
 
-
 pub struct NameIterator<'a> {
     names: &'a [&'a str],
     index: usize,
@@ -11,7 +10,7 @@ pub struct NameIterator<'a> {
 
 impl<'a> NameIterator<'a> {
     pub fn new(names: &'a [&'a str]) -> Self {
-        NameIterator {names, index:0}
+        NameIterator { names, index: 0 }
     }
 }
 
@@ -28,6 +27,5 @@ impl<'a> Iterator<'a> for NameIterator<'a> {
         } else {
             None
         }
-
     }
 }
