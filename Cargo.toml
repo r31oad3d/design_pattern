@@ -91,3 +91,7 @@ path = "src/behavior_pattern/mediator_pattern/main.rs"
 [[bin]]
 name = "memento_pattern"
 path = "src/behavior_pattern/memento_pattern/main.rs"
+
+[[bin]]
+name = "observer_pattern"
+path = "src/behavior_pattern/observer_pattern/main.rs"
