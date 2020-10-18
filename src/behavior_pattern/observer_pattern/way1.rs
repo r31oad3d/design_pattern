@@ -11,7 +11,7 @@ pub struct Subject {
     observers: RefCell<Vec<Rc<dyn Observer>>>,
     state: RefCell<i32>,
 }
-
+#[allow(clippy::new_without_default)]
 impl Subject {
     pub fn new() -> Subject {
         Subject {
