@@ -2,7 +2,6 @@ use std::cell::RefCell;
 use std::fmt::{Debug, Formatter, Result};
 use std::rc::{Rc, Weak};
 
-
 pub trait Observer {
     fn update(&self);
 }
@@ -35,7 +34,8 @@ impl Subject {
 
     pub fn notify_all_observer(&self) {
         println!("{:?}", self.observers);
-        self.observers.borrow()
+        self.observers
+            .borrow()
             .iter()
             .for_each(|observer| observer.update());
     }
@@ -77,19 +77,28 @@ impl HexaObserver {
 
 impl Observer for BinaryObserver {
     fn update(&self) {
-        println!("Binary String: {:b}", *self.subject.upgrade().unwrap().state.borrow())
+        println!(
+            "Binary String: {:b}",
+            *self.subject.upgrade().unwrap().state.borrow()
+        )
     }
 }
 
 impl Observer for OctalObserver {
     fn update(&self) {
-        println!("Octal String: {:o}", *self.subject.upgrade().unwrap().state.borrow())
+        println!(
+            "Octal String: {:o}",
+            *self.subject.upgrade().unwrap().state.borrow()
+        )
     }
 }
 
 impl Observer for HexaObserver {
     fn update(&self) {
-        println!("Hex String: {:X}", *self.subject.upgrade().unwrap().state.borrow())
+        println!(
+            "Hex String: {:X}",
+            *self.subject.upgrade().unwrap().state.borrow()
+        )
     }
 }
 

@@ -15,7 +15,6 @@ mut_static = "5.0.0"
 rand = "0.7.3"
 chrono = "0.4.19"
 
-
 [[bin]]
 name = "factory_pattern"
 path = "src/creational_pattern/factory_pattern/main.rs"
@@ -99,3 +98,7 @@ path = "src/behavior_pattern/observer_pattern/main.rs"
 [[bin]]
 name = "state_pattern"
 path = "src/behavior_pattern/state_pattern/main.rs"
+
+[[bin]]
+name = "null_object_pattern"
+path = "src/behavior_pattern/null_object_pattern/main.rs"
