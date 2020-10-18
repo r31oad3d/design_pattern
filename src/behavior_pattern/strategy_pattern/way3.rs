@@ -1,4 +1,4 @@
-//generic way would make Context different type
+//generic type way would make Context different type
 pub struct Context {
     strategy: Box<dyn Fn(i32, i32) -> i32>,
 }

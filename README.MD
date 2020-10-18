@@ -5,7 +5,7 @@
 > 其中包含的文字讲解部分来自: <br/> 
 > https://www.runoob.com/design-pattern/design-pattern-tutorial.html
 
-###设计模式的类型
+### 设计模式的类型
 <table class="reference notranslate">
 <tr><th>序号</th><th>模式 &amp; 描述</th><th>包括</th></tr>
 <tr><td>1</td><td><b>创建型模式</b><br />这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。</td>

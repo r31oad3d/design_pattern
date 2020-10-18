@@ -106,3 +106,7 @@ path = "src/behavior_pattern/null_object_pattern/main.rs"
 [[bin]]
 name = "strategy_pattern"
 path = "src/behavior_pattern/strategy_pattern/main.rs"
+
+[[bin]]
+name = "template_pattern"
+path = "src/behavior_pattern/template_pattern/main.rs"
