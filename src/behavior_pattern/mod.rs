@@ -7,3 +7,4 @@ pub mod memento_pattern;
 pub mod null_object_pattern;
 pub mod observer_pattern;
 pub mod state_pattern;
+pub mod strategy_pattern;
