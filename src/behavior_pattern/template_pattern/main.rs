@@ -1,7 +1,5 @@
 use design_pattern::behavior_pattern::template_pattern::{
-    Cricket,
-    Game,
-    Football
+    Cricket, Football, Game,
 };
 
 fn main() {

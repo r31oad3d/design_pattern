@@ -9,3 +9,4 @@ pub mod observer_pattern;
 pub mod state_pattern;
 pub mod strategy_pattern;
 pub mod template_pattern;
+pub mod visitor_pattern;

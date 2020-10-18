@@ -2,7 +2,6 @@ pub trait Game {
     fn initialize(&self);
     fn start_play(&self);
     fn end_play(&self);
-
 }
 
 impl dyn Game {
@@ -21,7 +20,6 @@ impl Cricket {
         Box::new(Cricket)
     }
 }
-
 
 impl Game for Cricket {
     fn initialize(&self) {
@@ -50,7 +48,3 @@ impl Game for Football {
         println!("Football Game Finished!")
     }
 }
-
-
-
-
