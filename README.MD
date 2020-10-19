@@ -1,7 +1,8 @@
 ### Design pattern(GoF) in Rust
 > **某些设计模式对于Rust语言来说是无必要的（个人理解）。**<br/>
-> **本Repo的目的最直接的是通过模式的Rust实现来提高对Rust的理解。**
-> **代码中包含了一些Rust的反模式，比如Deref多态。**
+> **本Repo的目的最直接的是通过模式的Rust实现来提高对Rust的理解。**<br/>
+> **代码中包含了一些Rust的反模式，比如Deref多态。**<br/>
+>
 > 其中包含的文字讲解部分来自: <br/> 
 > https://www.runoob.com/design-pattern/design-pattern-tutorial.html
 
