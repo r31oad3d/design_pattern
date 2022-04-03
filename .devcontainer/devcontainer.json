@@ -17,6 +17,7 @@
 		"mutantdino.resourcemonitor",
 		"Zerotaskx.rust-extension-pack",
 		"ms-vscode.hexeditor",
+		"eamodio.gitlens",
 		"GitHub.vscode-pull-request-github",
 		"g8up.gitee"
 	],
