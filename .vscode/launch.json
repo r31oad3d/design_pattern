@@ -1,0 +1,952 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'design_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "design_pattern",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'factory_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=factory_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "factory_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'factory_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=factory_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "factory_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abstract_factory_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abstract_factory_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "abstract_factory_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abstract_factory_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abstract_factory_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "abstract_factory_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'singleton_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=singleton_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "singleton_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'singleton_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=singleton_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "singleton_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'builder_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=builder_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "builder_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'builder_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=builder_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "builder_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'prototype_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=prototype_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "prototype_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'prototype_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=prototype_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "prototype_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'adapter_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=adapter_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "adapter_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'adapter_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=adapter_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "adapter_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'bridge_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=bridge_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "bridge_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'bridge_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=bridge_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "bridge_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'filter_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=filter_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "filter_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'filter_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=filter_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "filter_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'composite_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=composite_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "composite_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'composite_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=composite_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "composite_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'decorator_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=decorator_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "decorator_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'decorator_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=decorator_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "decorator_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'facade_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=facade_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "facade_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'facade_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=facade_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "facade_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'flyweight_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=flyweight_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "flyweight_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'flyweight_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=flyweight_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "flyweight_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'proxy_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=proxy_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "proxy_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'proxy_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=proxy_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "proxy_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'chain_of_responsibility_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=chain_of_responsibility_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "chain_of_responsibility_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'chain_of_responsibility_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=chain_of_responsibility_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "chain_of_responsibility_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'command_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=command_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "command_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'command_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=command_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "command_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'interpreter_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=interpreter_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "interpreter_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'interpreter_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=interpreter_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "interpreter_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'iterator_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=iterator_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "iterator_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'iterator_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=iterator_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "iterator_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mediator_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mediator_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "mediator_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'mediator_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=mediator_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "mediator_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'memento_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=memento_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "memento_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'memento_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=memento_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "memento_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'observer_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=observer_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "observer_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'observer_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=observer_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "observer_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'state_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=state_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "state_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'state_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=state_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "state_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'null_object_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=null_object_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "null_object_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'null_object_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=null_object_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "null_object_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'strategy_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=strategy_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "strategy_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'strategy_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=strategy_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "strategy_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'template_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=template_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "template_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'template_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=template_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "template_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'visitor_pattern'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=visitor_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "visitor_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'visitor_pattern'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=visitor_pattern",
+                    "--package=design_pattern"
+                ],
+                "filter": {
+                    "name": "visitor_pattern",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
