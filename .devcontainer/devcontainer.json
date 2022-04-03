@@ -16,7 +16,9 @@
 	"extensions": [
 		"mutantdino.resourcemonitor",
 		"Zerotaskx.rust-extension-pack",
-		"ms-vscode.hexeditor"
+		"ms-vscode.hexeditor",
+		"GitHub.vscode-pull-request-github",
+		"g8up.gitee"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
